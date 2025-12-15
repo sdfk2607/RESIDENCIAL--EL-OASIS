@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#2c3e50" />
+  <link rel="manifest" href="manifest.json" />
+  <title>Residencial El Oasis</title>
+  <style>
+    :root{
+      --primario:#1f3d2b; /* verde cordillera */
+      --secundario:#4f7c5a;
+      --fondo:#f2f5f3;
+      --card:#ffffff;
+    }
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      margin: 0;
+      background: linear-gradient(to bottom, #e9f0ec, #ffffff);
+      color: #2c2c2c;
+    }
+    header {
+      background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('cordillera1.jpg') center/cover no-repeat;
+      color: white;
+      padding: 90px 20px;
+      text-align: center;
+    }
+    header h1{
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+    header p{
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+    section {
+      background: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('cordillera2.jpg') center/cover no-repeat;
+      border-radius: 24px;
+      margin-bottom: 30px;
+      padding: 40px 25px;
+      max-width: 1100px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      color: var(--primario);
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+      border-left: 6px solid var(--secundario);
+      padding-left: 12px;
+    }
+    .habitaciones {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+    .habitacion {
+      background: var(--card);
+      padding: 20px;
+      border-radius: 18px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      transition: transform .3s ease, box-shadow .3s ease;
+    }
+    .habitacion:hover{
+      transform: translateY(-5px);
+      box-shadow: 0 18px 35px rgba(0,0,0,0.15);
+    }
+    .habitacion img{
+      border-radius: 14px;
+      margin-bottom: 12px;
+    }
+    .habitacion h3{
+      margin: 10px 0 5px;
+      color: var(--primario);
+    }
+    .habitacion p strong{
+      font-size: 1.2rem;
+      color: var(--secundario);
+    }
+    .habitacion ul{
+      padding-left: 18px;
+    }
+    .habitacion a{
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 18px;
+      background: var(--primario);
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .habitacion a:hover{
+      background: var(--secundario);
+    }
+    footer {
+      background: var(--primario);
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 40px;
+    }
+    video {
+      width: 100%;
+      border-radius: 18px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      padding: 15px 22px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.35);
+      z-index: 999;
+    }
+    .whatsapp:hover {
+      background-color: #1ebe5d;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Residencial El Oasis</h1>
+    <p>Comodidad y tranquilidad para su estadía</p>
+  </header>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a href="https://wa.me/56983477366?text=Hola%20quiero%20información%20sobre%20habitaciones%20disponibles" target="_blank" class="whatsapp">
+    💬 WhatsApp
+  </a>
+
+  <section>
+    <h2>📞 Contacto</h2>
+    <p>Teléfono / WhatsApp: <strong>+56 9 8347 7366</strong></p>
+  </section>
+
+  <section>
+    <h2>🖼️ Galería de la Residencial</h2>
+    <div class="habitaciones">
+      <img src="habitacion1.jpg" alt="Habitación" style="width:100%; border-radius:8px;" />
+      <img src="habitacion2.jpg" alt="Habitación" style="width:100%; border-radius:8px;" />
+      <img src="habitacion3.jpg" alt="Habitación" style="width:100%; border-radius:8px;" />
+      <img src="habitacion4.jpg" alt="Habitación" style="width:100%; border-radius:8px;" />
+      <img src="habitacion5.jpg" alt="Habitación" style="width:100%; border-radius:8px;" />
+      <img src="fachada.jpg" alt="Fachada" style="width:100%; border-radius:8px;" />
+    </div>
+  </section>
+
+  <section>
+    <h2>🛏️ Habitaciones y precios</h2>
+    <div class="habitaciones">
+      <div class="habitacion">
+        <img src="habitacion3.jpg" alt="Habitación Familiar" style="width:100%; border-radius:8px;" />
+        <h3>Habitación Familiar</h3>
+        <p><strong>$60.000 por persona / noche</strong></p>
+        <ul>
+          <li>Incluye <strong>3 comidas diarias</strong> (desayuno, almuerzo y cena)</li>
+          <li>Ducha con <strong>agua caliente</strong></li>
+          <li>Ropa de cama incluida</li>
+          <li>Wi‑Fi</li>
+          <li>Ambiente de <strong>comodidad y tranquilidad</strong></li>
+        </ul>
+        <a href="https://wa.me/56983477366?text=Hola%20quiero%20reservar%20la%20habitación%20familiar" target="_blank">Reservar por WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>🚐 Transporte</h2>
+    <p>Servicio de transporte disponible para nuestros huéspedes.</p>
+    <ul>
+          <li>Incluye <strong>3 comidas diarias</strong> (desayuno, almuerzo y cena)</li>
+          <li>Ducha con <strong>agua caliente</strong></li>
+          <li>Ropa de cama incluida</li>
+          <li>Wi‑Fi</li>
+          <li>Ambiente de <strong>comodidad y tranquilidad</strong></li>
+        </ul>
+  </section>
+
+  <section>
+    <h2>📍 Ubicación</h2>
+    <p>Encuéntranos fácilmente en el mapa:</p>
+    <iframe src="https://www.google.com/maps?q=-32.8389,-70.5987&output=embed" width="100%" height="300" style="border:0; border-radius:8px;" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <section>
+    <h2>🎥 Video de la Residencial</h2>
+    <video controls>
+      <source src="video-residencial.mp4" type="video/mp4">
+      Tu navegador no soporta el video.
+    </video>
+    <p>*Reemplace el archivo "video-residencial.mp4" con su video real.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Residencial El Oasis - Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
